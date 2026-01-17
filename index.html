@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WEBSITE YONZ OFFFCIAL</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      overflow: hidden;
+    }
+    h1 {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      overflow: hidden;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px red, 0 0 20px orange; color: red; }
+      to { text-shadow: 0 0 20px cyan, 0 0 30px blue; color: cyan; }
+    }
+    .rainbow-text {
+      font-size: 1.5em;
+      background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 4s linear infinite;
+      margin-top: 20px;
+    }
+    @keyframes rainbow {
+      0% { background-position: 0%;}
+      100% { background-position: 100%;}
+    }
+    img {
+      max-width: 80%;
+      height: auto;
+      margin: 30px 0;
+      border: 2px solid red;
+      border-radius: 10px;
+    }
+    button {
+      background: crimson;
+      border: none;
+      color: black;
+      padding: 12px 25px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 6px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px crimson;
+    }
+    button:hover {
+      background: darkred;9
+    }
+  </style>
+</head>
+<body onload="playMusic()">
+
+  <h1>WELCOME TO WEBSITE YONZ OFFICIAL</h1>
+
+  <img src="https://img1.pixhost.to/images/10681/668712690_demonking.jpg" alt=YONZ OFFFICIAL" />
+
+<div class="rainbow-text">yonz otfficial</div>
+  <div class="rainbow-text">yonz offfcial</div>
+
+  <button onclick="playMusic()">𝐏𝐋𝐀𝐘 𝐒𝐎𝐔𝐍𝐃</button>
+
+  <audio id="bgMusic" autoplay loop>
+    <source src="https://files.catbox.moe/3bbg7u.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function playMusic() {
+      const music = document.getElementById('bgMusic');
+      music.play().catch(e => {
+        console.log('Autoplay error:', e);
+      });
+    }
+  </script>
+
+  </body>
+</html>
